@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: crimson;">
+
+    <h1 align="center">Age Calculator </h1>
+    <h2 align="center"> "Age is just Number" </h2>
+  
+    <table align="center">
+        <tr>
+            <td> <input class="screenside" id="screenpart" placeholder="DOB" ></td>            <!-- User input Screen part  -->
+            
+        </tr>
+       </table>
+
+
+    <table align="center">
+       <Tr>
+            <td><input class="button" type="button" value="1" onclick="display(1)" ></td>
+            <td><input class="button" type="button" value="2" onclick="display(2)"></td>
+            <td><input class="button" type="button" value="3" onclick="display(3)"></td>
+        </Tr>
+        <tr>
+            <td><input class="button" type="button" value="4" onclick="display(4)"></td>
+            <td><input class="button" type="button" value="5" onclick="display(5)"></td>       <!--  Button  part -->  <!-- display() is use to display the value of the button part-->
+            <td><input class="button" type="button" value="6" onclick="display(6)"></td>
+        </tr>
+        <tr>
+            <td><input class="button" type="button" value="7" onclick="display(7)"></td>
+            <td><input class="button" type="button" value="8" onclick="display(8)"></td>
+            <td><input class="button" type="button" value="9" onclick="display(9)"></td>
+        </tr>
+       
+    
+    </table>
+
+    <table align="center">
+
+    <tr>
+        <td>
+            <td><input class="zero-button" type="button" value="0" onclick="display(0)"></td>
+        </td>
+    </tr>
+</table>
+
+
+
+
+    <table align="center">  <!--  Clear  -- value of the user input -->
+        <tr>
+            <td><input  class="e" type="button" value="="  onclick="calculate()" style="background-color: green;"></td>
+            <td><input  class="c" id="clearbutton" type="button" value="Clear"  onclick="clearScreen()" style="background-color: red;"></td>
+            <td> <input class="backspace" type="button" value="-" onclick="backSpace()"></td>
+            
+        </tr>
+       </table>
+
+       <table align="center" >
+           
+           <tr> 
+               <td> <input id="output" class="output-box" placeholder="Your age is" ></td> 
+            </tr>
+       </table>
+
+
+
+       <script src="script.js"></script>  
+</body>
+</html>
